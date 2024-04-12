@@ -13,7 +13,7 @@ public class ConeShop {
 
         //TODO: Fill the array allReviews with reviews with random ratings from 0 to 10 inclusive
     for(int i=0; i< allReviews.length; i++){
-        allReviews[i] = Math.random()*10;
+        allReviews[i] = new Review ((int)(Math.random()*10));
     }
         //TODO: print all the ratings in the array allReviews
         for(int i=0; i<allReviews.length; i++){
@@ -27,7 +27,7 @@ public class ConeShop {
     public void averageRating(){
         //TODO: calculate the average rating from the array allReviews and print it
     int sum =0;
-    for(int i=0; i<allReview.length; i++){
+    for(int i=0; i<allReviews.length; i++){
         sum +=allReviews[i].rating;
     }
     double average = (double) sum/allReviews.length;
